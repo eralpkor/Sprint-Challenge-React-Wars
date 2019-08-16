@@ -6,3 +6,11 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.ui.card > .content {
+  background: #fcf5c7;
+}
+
+.ui[class*="center aligned"].container {
+  margin: 5%;
+}
