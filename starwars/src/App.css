@@ -14,3 +14,7 @@
 .ui[class*="center aligned"].container {
   margin: 5%;
 }
+
+.ui.inverted.segment {
+  margin: 20px 0 40px 0;
+}

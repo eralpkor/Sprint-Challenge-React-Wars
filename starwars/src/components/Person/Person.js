@@ -1,21 +1,26 @@
 import React from "react";
 import { Card } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 
 function Person(props) {
+  const { name, birth_year, gender, height } = props.person;
+
+  // console.log(name);
   return (
-    <Card>
-      {/* <Image src="/images/avatar/large/matthew.png" wrapped ui={false} /> */}
-      <Card.Content>
-        <Card.Header>{props.name}</Card.Header>
-        <Card.Meta>
-          <span className="date">Birth year: {props.birth_year}</span>
-        </Card.Meta>
-        <Card.Description>
-          <p>Sex: {props.gender}</p>
-          <p>Height: {props.height}</p>
-        </Card.Description>
-      </Card.Content>
-    </Card>
+    <Grid.Column>
+      <Card>
+        <Card.Content>
+          <Card.Header>{name}</Card.Header>
+          <Card.Meta>
+            <span className="date">Birth year: {birth_year}</span>
+          </Card.Meta>
+          <Card.Description>
+            <p>Sex: {gender}</p>
+            <p>Height: {height}</p>
+          </Card.Description>
+        </Card.Content>
+      </Card>
+    </Grid.Column>
   );
 }
 

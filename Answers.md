@@ -14,4 +14,8 @@
 
 1. Describe props.
 
+- Props stands for properties. A way of passing data from component to component.
+
 1. What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+- Side effects: anything that affects something outside the scope of the function being executed.
