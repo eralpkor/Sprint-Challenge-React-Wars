@@ -16,7 +16,7 @@ const App = () => {
   // sync up with, if any.
 
   const [state, setState] = useState([]); // []
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(1); // []
   const [charCount, setCharCount] = useState();
 
   useEffect(() => {
@@ -40,11 +40,13 @@ const App = () => {
       <Btn page={page} prevPage={prevPage} nextPage={nextPage} />
 
       <Grid container columns={3}>
-        {state.length
-          ? state.map(person => {
-              return <Person key={uuid()} person={person} />; // return Person component
-            })
-          : "Loading..."}
+        {state.length ? (
+          state.map(person => {
+            return <Person key={uuid()} person={person} />; // return Person component
+          })
+        ) : (
+          <p>Loading...</p>
+        )}
       </Grid>
     </div>
   );

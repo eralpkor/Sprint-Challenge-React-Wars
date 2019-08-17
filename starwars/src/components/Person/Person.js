@@ -1,6 +1,6 @@
 import React from "react";
-import { Card } from "semantic-ui-react";
-import { Grid } from "semantic-ui-react";
+import { Card, Grid } from "semantic-ui-react";
+// import { Grid } from "semantic-ui-react";
 
 function Person(props) {
   const { name, birth_year, gender, height } = props.person;
